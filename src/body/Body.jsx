@@ -1,3 +1,4 @@
+import nayan from "../images/nayan.jpeg"
 import './Body.css'
 
 function Body(){
@@ -9,7 +10,7 @@ function Body(){
                 </h3>
             </div>
             <div className='image'>
-                <img src="./public/images/nayan.jfif" alt="nayan" />
+                <img src={nayan} alt="nayan" />
             </div>
         </div>
     );
