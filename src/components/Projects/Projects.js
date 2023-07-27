@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import disease from "../../Assets/Projects/disease.jfif";
+import admin from "../../Assets/Projects/admin-dashboard.jpg";
+import commerce from "../../Assets/Projects/commerce.jpg";
+import job from "../../Assets/Projects/job-portal.png";
+import smart from "../../Assets/Projects/smart-school.jpg";
 
 function Projects() {
   return (
@@ -15,7 +14,7 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
@@ -23,60 +22,60 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={commerce}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="OLDUCT"
+              description="An old product e-commerce website is a digital platform that allows users to browse, view, and purchase older or second-hand products. Unlike traditional e-commerce websites that primarily focus on selling new items, an old product e-commerce website caters to the market for pre-owned or vintage goods. These products may include used electronics, furniture, clothing, accessories, collectibles, and more."
+              ghLink="https://github.com/NAYANCSE27/olduct"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={smart}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Smart School"
+              description="A smart school project using the MERN stack (MongoDB, Express.js, React, Node.js) aims to create an intelligent and efficient digital platform for managing various aspects of a school or educational institution. The project leverages modern web technologies to provide seamless communication between students, teachers, administrators, and parents."
+              ghLink="https://github.com/NAYANCSE27/SmartSchool"
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={admin}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Admin Dashboard"
+              description="An admin dashboard is a web application designed to provide an interface for administrators or authorized personnel to manage and monitor various aspects of a system or organization. It serves as a centralized platform for administrative tasks, data visualization, and decision-making. The primary goal of an admin dashboard is to simplify complex processes and provide actionable insights to administrators."
+              ghLink="https://github.com/NAYANCSE27/ad-board"
+              // demoLink="https://editor.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={job}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Online Job Portal"
+              description="An online job portal is a web-based platform that connects job seekers with employers and facilitates the process of job searching and hiring. The project aims to provide an efficient and user-friendly digital space where job seekers can explore job opportunities, submit applications, and showcase their skills, while employers can post job listings, review applications, and find suitable candidates."
+              ghLink="https://github.com/NAYANCSE27/Job-Portal-Website"
+              // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={disease}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="DiagnoSmart"
+              description="The motivation for multiple diseases prediction using machine learning lies in the potential to improve patient outcomes and reduce healthcare costs. By leveraging the power of machine learning algorithms, we can develop models that can accurately predict the likelihood of a patient developing multiple diseases, such as diabetes, heart disease, and cancer."
+              ghLink="https://github.com/NAYANCSE27/DiagnoSmart"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
@@ -86,7 +85,7 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
